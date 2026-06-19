@@ -13,6 +13,7 @@ env:
   AWS_REGION: us-east-1
   ARTIFACT_NAME: globalmart-app.zip
   EC2_TAG_NAME: GlobalMart-WebServer
+  ARTIFACT_BUCKET: globalmart-codedeploy-artifacts-443245369180
 
 jobs:
   build-and-deploy:
@@ -46,7 +47,7 @@ jobs:
 
       - name: Upload artifact to S3
         run: |
-          aws s3 cp $ARTIFACT_NAME s3://YOUR_ARTIFACT_BUCKET/$ARTIFACT_NAME
+          aws s3 cp $ARTIFACT_NAME s3://$ARTIFACT_BUCKET/$ARTIFACT_NAME
 
       - name: Get EC2 instance ID
         id: get-instance
@@ -66,7 +67,7 @@ jobs:
             --comment "Deploy GlobalMart React app from GitHub Actions" \
             --parameters 'commands=[
               "set -e",
-              "aws s3 cp s3://YOUR_ARTIFACT_BUCKET/globalmart-app.zip /tmp/globalmart-app.zip",
+              "aws s3 cp s3://$ARTIFACT_BUCKET/$ARTIFACT_NAME /tmp/globalmart-app.zip",
               "rm -rf /tmp/globalmart-deploy",
               "mkdir -p /tmp/globalmart-deploy",
               "unzip -o /tmp/globalmart-app.zip -d /tmp/globalmart-deploy",
