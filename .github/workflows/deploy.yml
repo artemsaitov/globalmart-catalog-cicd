@@ -65,17 +65,17 @@ jobs:
             --instance-ids "${{ steps.get-instance.outputs.instance_id }}" \
             --document-name "AWS-RunShellScript" \
             --comment "Deploy GlobalMart React app from GitHub Actions" \
-            --parameters 'commands=[
-              "set -e",
-              "aws s3 cp s3://$ARTIFACT_BUCKET/$ARTIFACT_NAME /tmp/globalmart-app.zip",
-              "rm -rf /tmp/globalmart-deploy",
-              "mkdir -p /tmp/globalmart-deploy",
-              "unzip -o /tmp/globalmart-app.zip -d /tmp/globalmart-deploy",
-              "rm -rf /usr/share/nginx/html/*",
-              "cp -r /tmp/globalmart-deploy/build/* /usr/share/nginx/html/",
-              "chmod -R 755 /usr/share/nginx/html",
-              "systemctl restart nginx"
-            ]' \
+            --parameters "commands=[
+              \"set -e\",
+              \"aws s3 cp s3://globalmart-codedeploy-artifacts-443245369180/globalmart-app.zip /tmp/globalmart-app.zip\",
+              \"rm -rf /tmp/globalmart-deploy\",
+              \"mkdir -p /tmp/globalmart-deploy\",
+              \"unzip -o /tmp/globalmart-app.zip -d /tmp/globalmart-deploy\",
+              \"rm -rf /usr/share/nginx/html/*\",
+              \"cp -r /tmp/globalmart-deploy/build/* /usr/share/nginx/html/\",
+              \"chmod -R 755 /usr/share/nginx/html\",
+              \"systemctl restart nginx\"
+            ]" \
             --query "Command.CommandId" \
             --output text)
 
