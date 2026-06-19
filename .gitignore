@@ -1,0 +1,16 @@
+cat > .gitignore <<'EOF'
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+
+# Node
+node_modules/
+build/
+
+# Mac
+.DS_Store
+EOF
