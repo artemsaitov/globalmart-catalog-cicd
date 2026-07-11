@@ -70,7 +70,7 @@ jobs:
               \"aws s3 cp s3://globalmart-codedeploy-artifacts-443245369180/globalmart-app.zip /tmp/globalmart-app.zip\",
               \"rm -rf /tmp/globalmart-deploy\",
               \"mkdir -p /tmp/globalmart-deploy\",
-              \"unzip -o /tmp/globalmart-app.zip -d /tmp/globalmart-deploy\",git add .github/workflows/
+              \"unzip -o /tmp/globalmart-app.zip -d /tmp/globalmart-deploy\"
               \"rm -rf /usr/share/nginx/html/*\",
               \"cp -r /tmp/globalmart-deploy/build/* /usr/share/nginx/html/\",
               \"chmod -R 755 /usr/share/nginx/html\",
