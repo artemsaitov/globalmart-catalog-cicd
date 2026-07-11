@@ -108,3 +108,4 @@ The final result is a working automated deployment pipeline.
 When code is pushed to GitHub, the pipeline automatically builds the React application and deploys it to an EC2 instance running Nginx.
 
 This project demonstrates hands-on experience with cloud infrastructure, CI/CD automation, IAM permissions, secure AWS authentication, and troubleshooting deployment failures.
+Broken trigger test Fri Jul 10 20:01:59 CST 2026
