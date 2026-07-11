@@ -111,3 +111,4 @@ This project demonstrates hands-on experience with cloud infrastructure, CI/CD a
 Broken trigger test Fri Jul 10 20:01:59 CST 2026
 OIDC IAM troubleshooting test Fri Jul 10 20:53:25 CST 2026
 OIDC IAM troubleshooting test Fri Jul 10 20:59:16 CST 2026
+S3 permission troubleshooting test Fri Jul 10 21:50:01 CST 2026
