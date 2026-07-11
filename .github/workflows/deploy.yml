@@ -67,7 +67,7 @@ jobs:
             --comment "Deploy GlobalMart React app from GitHub Actions" \
             --parameters "commands=[
               \"set -e\",
-              \"aws s3 cp s3://globalmart-codedeploy-artifacts-443245369180/globalmart-app-missing.zip /tmp/globalmart-app.zip\",
+              \"aws s3 cp s3://globalmart-codedeploy-artifacts-443245369180/globalmart-app.zip /tmp/globalmart-app.zip\",
               \"rm -rf /tmp/globalmart-deploy\",
               \"mkdir -p /tmp/globalmart-deploy\",
               \"unzip -o /tmp/globalmart-app.zip -d /tmp/globalmart-deploy\",git add .github/workflows/
