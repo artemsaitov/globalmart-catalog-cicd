@@ -116,3 +116,4 @@ S3 permission troubleshooting test Fri Jul 10 21:56:01 CST 2026
 SSM permission troubleshooting test Fri Jul 10 22:10:40 CST 2026
 SSM agent offline troubleshooting test Fri Jul 10 22:35:08 CST 2026
 EC2 tag troubleshooting test Fri Jul 10 23:26:32 CST 2026
+EC2 S3 permission troubleshooting test Fri Jul 10 23:39:18 CST 2026
