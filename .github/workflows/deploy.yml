@@ -3,7 +3,7 @@ name: Deploy GlobalMart React App with SSM
 on:
   push:
     branches:
-      - main
+      - disabled-deployment-test
 
 permissions:
   id-token: write
