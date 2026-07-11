@@ -114,3 +114,4 @@ OIDC IAM troubleshooting test Fri Jul 10 20:59:16 CST 2026
 S3 permission troubleshooting test Fri Jul 10 21:50:01 CST 2026
 S3 permission troubleshooting test Fri Jul 10 21:56:01 CST 2026
 SSM permission troubleshooting test Fri Jul 10 22:10:40 CST 2026
+SSM agent offline troubleshooting test Fri Jul 10 22:35:08 CST 2026
